@@ -1,0 +1,223 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.wrapper{
+    display:flex;
+}
+
+.main{
+    flex:1;
+    margin-left:260px;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#16c784;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow:auto;
+}
+
+.logo{
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    padding:30px 0;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:8px 0;
+}
+
+.sidebar a{
+    color:#fff;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:15px 25px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.18);
+}
+
+.sidebar i{
+    font-size:20px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    height:75px;
+}
+
+.icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.icons i{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.dashboard-card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h5{
+    color:#777;
+}
+
+.dashboard-card h2{
+    color:#16c784;
+    margin:10px 0;
+}
+
+.dashboard-card p{
+    color:#198754;
+    font-weight:bold;
+}
+
+/* ===========================
+   CARD GERAL
+=========================== */
+
+.card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   TABELA
+=========================== */
+
+.table{
+    margin-top:20px;
+}
+
+.table thead{
+    background:#16c784;
+    color:white;
+}
+
+.table th,
+.table td{
+    vertical-align:middle;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn-success{
+    background:#16c784;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#11a86d;
+}
+
+/* ===========================
+   CANVAS
+=========================== */
+
+canvas{
+    width:100% !important;
+    height:320px !important;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main{
+    margin-left:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.wrapper{
+    display:block;
+}
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main{
+    margin-left:0;
+}
+
+.navbar .container-fluid{
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.icons{
+    margin-top:10px;
+}
+
+}
+
